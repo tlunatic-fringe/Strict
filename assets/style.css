@@ -1,0 +1,481 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: white;
+    
+}
+
+/* header starts*/
+header{
+    background-color: #f6f9f9;
+    height: 80px;
+}
+header .container{
+    margin: 0 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header .container .logo{
+    margin-top: 25px;
+}
+header .container .logo img{}
+header .container .nav{
+    margin-top: 27px;
+}
+header .container .nav ul{
+    display: flex;
+}
+header .container .nav ul li{
+    list-style-type: none;
+    padding-left: 45px;
+}
+header .container .nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2D3950;
+    font-weight: 600;
+}
+header .container .nav ul li:hover a{
+    color: #f6f9f9;
+    border: 1px solid #6c7585;
+    background: #6c7585;
+    border-radius: 5px;
+    padding: 10px;
+}
+/* header stops*/
+
+/* banner starts*/
+.banner{
+    background-image: url(images/banner.png);
+    height: 800px;
+    background-size: cover;
+}
+.banner .container{
+    margin: 0 250px;
+    text-align: center;
+    padding: 180px 0;
+}
+.banner .container .tophead{
+    
+    font-size: 150px;
+    animation: moveleft 1s ease-in;
+    
+    text-transform: uppercase;
+    
+    color: white;
+}
+.banner .container .hr{
+    border: 1px solid #4d8bb7;
+    animation: movedown 1s ease-in;
+    
+}
+.banner .container .topbreif{
+    color: white;
+    font-size: 30px;
+    padding: 35px 0;
+    animation: moveright 1s ease-in;
+}
+.banner .container .topbutton{
+    color: white;
+    background: transparent;
+    border: 1px solid #4d8bb7;
+    height: 50px;
+    width: 150px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    animation: moveup 1s ease-in;
+}
+.topbutton:hover{
+    transform: translateY(-3px);
+}
+.topbutton:active{
+    transform: translateY(-1px);
+
+
+}
+
+@keyframes moveleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-250px) ;
+    }
+    
+    80%{
+        opacity: 0.8;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    }
+@keyframes moveright{
+    0%{
+        opacity: 0;
+        transform: translateX(250px) ;
+    }
+    
+    80%{
+        opacity: 0.8;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    }
+@keyframes movedown{
+    0%{
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+    
+    80%{
+        opacity: 0.8;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    }
+@keyframes moveup{
+    0%{
+        opacity: 0;
+        transform: translateY(250px);
+    }
+    
+    80%{
+        opacity: 0.8;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+
+/* banner stops*/
+
+/* Description starts*/
+.description{
+    height: 40vh;
+    background-color: #f6f9f9;
+    text-align: center;
+}
+.description .descontain{
+    margin: 0 250px;
+    padding: 60px 0;
+}
+.description .descontain .desheading{
+    font-size: 40px;
+    color: #2D3950;
+}
+.description .descontain .desbrief{
+    color: #c7c8c8;
+    padding: 20px 0;
+}
+/* Description stops*/
+
+/* features starts*/
+.features{
+    margin: 0 250px;
+}
+.features .featurecontain{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    flex-basis: 32%;
+    padding: 100px 0px;
+}
+.features .featurecontain .feature1{
+    text-align: center;
+}
+.features .featurecontain .feature1 .fa-mobile-alt{
+    height: 100px;
+    width: 100px;
+    font-size: 60px;
+    padding-top: 20px;
+    background-image: linear-gradient(to right, #48baff 50%,#5fc3ff 50%);
+    color: white;
+}
+.features .featurecontain .feature2{
+    text-align: center;
+}
+.features .featurecontain .feature2 .fa-paper-plane{
+    height: 100px;
+    width: 100px;
+    font-size: 60px;
+    padding-top: 20px;
+    background-image: linear-gradient(to right, #48baff 50%,#5fc3ff 50%);
+    color: white;
+}
+.features .featurecontain .feature3{
+    text-align: center;
+}
+.features .featurecontain .feature3 .fa-bullhorn{
+    height: 100px;
+    width: 100px;
+    font-size: 60px;
+    padding-top: 20px;
+    background-image: linear-gradient(to right, #48baff 50%,#5fc3ff 50%);
+    color: white;
+}
+h4{
+    color: #2b364c;
+    font-size: 20px;
+    padding: 20px 0;
+}
+p{
+    color: #c7c8c8;
+    padding-bottom: 50px;
+}
+/* features stops*/
+
+
+/* showcase starts*/
+.showcase{
+    height: 100vh;
+    background-color: #f6f9f9;
+}
+.showcase .showcasecontain{
+    margin: 0 250px;
+    text-align: center;
+}
+.showcase .showcasecontain .showhead{}
+.showcase .showcasecontain .showbrief{}
+.row1,.row2{
+    display: flex;
+    justify-content: center;
+}
+.gallery{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    margin: 10px;
+    
+    
+}
+.gallery .pic{
+    width: 300px;
+    height: 200px;
+    
+    
+
+    
+}
+.gallery .icons{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(21,164,250,0.8);
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+.gallery .icons .fas:hover{
+    transform: translateY(-3px);
+    
+}
+.gallery .icons .fas:active{
+    transform: translateY(-1px);
+}
+.gallery .icons .fa-search-plus{
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 10px;
+    opacity: 0;
+}
+.gallery .icons .fa-link{
+    position: absolute;
+    left: 55%;
+    top: 40%;
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 10px;
+    opacity: 0;
+}
+.gallery:hover .icons,.gallery:hover .fa-search-plus,.gallery:hover .fa-link{
+    opacity: 1
+}
+
+/* showcase stops*/
+
+
+
+/*footer starts*/
+.footer{
+    background-image: 
+    linear-gradient(
+        rgba(45, 55, 75, 0.8), 
+        rgba(45, 55, 76, 0.8)), 
+        url(images/bottom-bg.png);
+    height: 100vh;
+    background-size: cover;
+    
+    
+}
+.footer .footercontain{
+    margin: 0 250px;
+    text-align: center;
+    
+}
+.footer .footercontain .footertop{}
+.footer .footercontain .footertop .foothead{
+    color: white;
+    font-size: 45px;
+    font-weight: 400;
+}
+.footer .footercontain .footertop .footbrief{
+    font-size: 14px;
+}
+.footer .footercontain .footertop .name input[type="text"], input[type="email"]{
+    display: block;
+	margin: 0 auto;
+	color: #999;
+	background: none;
+	border: 1px solid #999;
+	border-radius: 3px;
+	width: 550px;
+	height: 60px;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+.footer .footercontain .footertop .message textarea{
+    display: block;
+	margin: 0 auto;
+	color: #999;
+	background: none;
+	border: 1px solid #999;
+	border-radius: 3px;
+	width: 550px;
+	height: 120px;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+.footer .footercontain .footertop .submitbox{
+    margin-top: 20px;
+    display: flex;
+    
+}
+.footer .footercontain .footertop .submitbox input[type="checkbox"]{
+    
+margin-left: 150px;
+    
+margin-top: 9px;
+}
+.subs{
+    margin: 0px 0 0px 16px;
+}
+
+.footer .footercontain .footertop .submitbox .button{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #15a4fa;
+    border-radius: 3px;
+    height: 35px;
+    width: 95px;
+    margin-left: 280px;
+}
+.footer .footercontain .footertop .submitbox .button:hover{
+    transform: translateY(-3px);
+    
+}
+.footer .footercontain .footertop .submitbox .button:active{
+    transform: translateY(-1px);
+}
+
+/*footer stops*/
+
+/*social starts*/
+.social{
+    background-color: #f6f9f9;
+    height: 120px;
+}
+.social .socialcontain{
+    margin: 0 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.social .socialcontain .copyright{
+    padding-top: 40px;
+}
+.social .socialcontain .copyright #copy{}
+.social .socialcontain .plugins{
+    display: flex;
+    margin-top: 35px;
+}
+.social .socialcontain .plugins .fab{
+    height: 35px;
+    width: 40px;
+    font-size: 20px;
+    padding-top: 8px;
+    background: #48baff;
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+.social .socialcontain .plugins .fab:hover{
+    transform: translateY(-3px);
+}
+.social .socialcontain .plugins .fab:active{
+    transform: translateY(-1px);
+}
+
+
+
+/*social stops*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
